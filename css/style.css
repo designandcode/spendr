@@ -1,0 +1,101 @@
+body{
+  width:100%;
+  margin:0;
+  padding:0;
+  color: #7A7A7A;
+  background: #2b0555;
+  text-align:center;
+  font-family: 'Germania One', cursive;
+  font-family: 'Esteban', serif;
+  font-size:1em;
+}
+h1{
+  margin:0;
+  padding:0;
+}
+.header,
+.content,
+.footer{
+  width:100%;
+}
+.header,
+.footer{
+  color:#F0D775;
+}
+.header{
+  background: #23004f; /* Old browsers */
+background: -moz-linear-gradient(top, #23004f 0%, #491b6e 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#23004f), color-stop(100%,#491b6e)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #23004f 0%,#491b6e 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #23004f 0%,#491b6e 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, #23004f 0%,#491b6e 100%); /* IE10+ */
+background: linear-gradient(to bottom, #23004f 0%,#491b6e 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#23004f', endColorstr='#491b6e',GradientType=0 ); /* IE6-9 */
+}
+.footer{
+  background:transparent;
+}
+.header header,
+.footer footer,
+.content #index{
+  width:90%;
+  max-width:640px;
+  min-width:320px;
+  margin:0 auto;
+}
+.content{
+  background:#eee;
+  background-image: url('../images/nice_paper.png'); /* Image credit: http://read.subpub.com */
+}
+.content #index{
+  width:50%;
+  margin:0 auto;
+  padding: 15px 0;
+}
+.header header img{
+  vertical-align:middle;
+}
+.header header h1{
+  margin:0;
+  padding:15px;
+  font-family: 'Germania One', cursive;
+  font-size:250%;
+}
+.footer footer{
+  margin:15px auto;
+}
+.spending{
+  border:1px solid #ccc;
+  width:70%;
+  margin:0 auto;
+}
+.spending tr.odd{
+  background:#F5EDCE;
+}
+.spending td.amount{
+  text-align:right;
+  padding-right:10%;
+}
+.amount{
+  color:#636363;
+  color:#491B6E;
+  font-weight:bold;
+}
+.add-money {
+  -webkit-transition:all linear 0.5s;
+  transition:all linear 0.5s;
+  opacity:1;
+} 
+.add-money.ng-hide-add,
+.add-money.ng-hide-remove {
+  display:inline-block!important;
+}
+.add-money.ng-hide {
+  opacity:0;
+}
+.show-add-money{
+  font-size:75%;
+}
+.show-add-money input{
+  width:40px;
+}

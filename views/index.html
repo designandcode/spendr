@@ -1,0 +1,45 @@
+<div id="index" ng-controller="index" ng-init="setSpendingLimits()">
+  <h1>
+    I have <span class="amount">${{UI.balance}}</span> 
+    <span class="show-add-money" ng-animate=" 'UI.showAdd' ">
+      [
+        <span class="add-money" ng-show="UI.showAdd == true">
+          <input ng-model="UI.editBalance" type="number" min="0" max="3000" step="20" /> 
+          <span ng-click="setBalanceUp()">+</span> 
+          <span ng-click="setBalanceDown()">-</span>
+        </span>
+        <span ng-click="setShowAdd()">{{UI.showAddText}}</span> 
+      ]
+    </span>
+  </h1>
+  <div>
+    and it needs to last  
+    <select ng-change="setSpendingLimits()" ng-model="UI.months">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+    </select> months.
+    <h3>Cool, so I can spend</h3>
+    <table class="spending">
+      <tbody>
+        <tr class="even">
+          <td class="amount">${{UI.daily}}</td>
+          <td>per day</td>
+        </tr>
+        <tr class="odd">
+          <td class="amount">${{UI.weekly}}</td>
+          <td>per week</td>
+        </tr>
+        <tr class="even">
+          <td class="amount">${{UI.biweekly}}</td>
+          <td>per bi-week</td>
+        </tr>
+        <tr class="odd">
+          <td class="amount">${{UI.monthly}}</td>
+          <td>per month</td>
+        </tr>
+      </tbody>
+    </table>
+    <h3>and not run out of money!</h3>
+  </div>
+</div>
