@@ -1,4 +1,4 @@
 spender
 ======
 
-Live Demo w/ Documentation: http://kalimfleet.net/demos/one/spend/
+Live Demo: http://kalimfleet.net/demos/one/spend/
